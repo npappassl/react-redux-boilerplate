@@ -1,5 +1,48 @@
 $primary: #006699;
+$userListBgColor: #5f3a51;
+$userListFgColor: #fdfdff;
+$messageTextAreaFgColor: #fdfdff;
+$messageDivBgColor: #85928e;
 
 h2 {
 	color: $primary;
+}
+main,body,html,#layout{
+	height: 100%;
+	overflow-y: hidden;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+#rightVerticalLayout{
+	display: flex;
+	height: 100%;
+	position: relative;
+}
+#messageDiv{
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	height: 30%;
+	max-height: 200px;
+	background: $messageDivBgColor;
+	text-align: center;
+}
+#messageTextArea{
+	margin: 1em auto;
+	width: 80%;
+	height: 1.4em;
+	color: $messageTextAreaFgColor;
+}
+#UserList{
+	float: left;
+	display: inline-block;
+	left:0;
+	top:0;
+	height: 100%;
+	color: $userListFgColor;
+	width:30%;
+	max-width: 300px;
+	background-color: $userListBgColor;
 }
